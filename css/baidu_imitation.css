@@ -1,0 +1,123 @@
+/*设置头部header的样式*/
+	#header{
+		height: 55px;
+		width: 1265px;
+	}
+/*设置上半主体的样式*/
+	#upper{
+		height:234px;
+		width: 1265px;
+	}
+/*设置body下半的样式*/
+	#lower{
+		height: 348px;
+		width: 1265px;
+	}
+/*设置lower左半的样式*/
+	#lower_left{
+		height: 342px ;
+		width: 580px;
+		border: solid 2px orange;
+		float:left;
+		position: relative;
+		left:160px;
+	}
+/*设置lower_right右半的样式*/
+	#lower_right{
+		height: 342px;
+		width: 290px;
+		border: dashed 2px blue;
+		float: right;
+		position: relative;
+		right: 150px;
+	}
+/*设置lower_low_right右下的样式*/
+	#lower_low_right{
+		height: 90px;
+		width: 40px;
+		border: solid 1px lightgray;
+		border-radius: 20px;
+		background-color: lightgray;
+		position: fixed;
+		float: right;
+		right: 40px;
+		bottom: 55px;
+	}
+/*设置底部footer的样式*/
+	#footer{
+		height: 39px;
+		width: 1265px;
+		position: fixed;
+	}
+/*设置列表li的样式*/
+	#top_left{
+		position: absolute;
+		left: 10px;
+	}
+	#top_left li{
+		list-style-type: none;
+		float: left;
+	}
+	#top_left li a{
+		color: black;
+		font-size: small;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+	#top_left li a:hover{color:blue}
+	#top_right{
+		position: absolute;
+		right: 10px;
+	}
+	#top_right li{
+		list-style-type: none;
+		float: left;
+	}
+	#top_right li a{
+		color: black;
+		font-size: small;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+	#top_right li a:hover{color:blue}
+	#foot{
+		position: absolute;
+		left: 10px;
+	}
+	#foot li{
+		list-style-type: none;
+		float: left;
+	}
+	#foot li a{
+		color:gray;
+		font-size: small;
+		text-decoration: none;
+		margin-right:10px;
+	}
+	#foot li a:hover{color:black}
+/*设置图片样式*/
+	#upper_img{
+		height: 60%;
+		width: 30%;
+	}
+/*设置搜索框样式*/
+	input[type=text]{
+		height: 45px;
+		width: 550px;
+		border: solid 2px #4992ff;
+		border-radius: 10px;
+		background-image: url(../img/003.jpg);
+		background-size: 50px 45px;
+		background-position: right;
+		background-repeat: no-repeat;
+	}
+	input[type=submit]{
+		height: 45px;
+		width: 120px;
+		color: white;
+		border: solid 2px #2d78f4;
+		background-color: #2d78f4;
+		border-radius: 10px;
+		position: relative;
+		right: 8px;
+	}

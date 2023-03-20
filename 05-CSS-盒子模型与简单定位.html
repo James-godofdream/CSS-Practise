@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>CSS盒子模型与简单定位</title>
+		<meta charset="UTF-8"/>
+		<!--CSS的盒子模型学习
+				div标签：
+					块级标签：主要是来进行网页布局的，会将其中的子元素内容作为一个独立的整体存在
+				特点：
+					默认宽度是页面的宽度，但可以设置
+					高度默认是没有的，但是可以设置（可以顶开）
+					如果子元素设置了百分比的高或者宽，占据的是div的百分比，不是页面的
+				盒子模型：
+					外边距：margin
+						作用：设置元素之间的外边距
+						居中设置:0px auto ;上下间隔是0px,左右居中
+						可以根据需求单独的设置上下左右的外边距
+					边框：border
+						作用：用来设置元素的边框大小
+						可以单独设置上下左右
+					内边距：padding
+						作用：设置内容与边框之间的距离，可以单独设置上下左右的内边距
+						注意；不会改变内容区域的大小
+					内容区域：
+						作用改变内容区域的大小
+						设置宽和高可以改变区域的大小
+		-->
+		<style type="text/css">
+			img{
+				width: 500px;
+				height: 300px;
+				margin-left: 55px;
+			}
+			#showdiv{
+				border: solid 3px;
+				width: 95%;
+				height: 45%;
+				margin-bottom: 10px;
+				margin-left: 20px;
+			}
+			#div01{
+				border: dashed 3px orange;
+				width: 95%;
+				height: 45%;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>CSS盒子模型</h3>
+		<hr />
+		<div id="showdiv">
+		<img src="img/006.png" alt=""/>
+		<img src="img/007.png" alt=""/>			
+		</div><br />
+		<div id="div01"></div>
+	</body>
+</html>

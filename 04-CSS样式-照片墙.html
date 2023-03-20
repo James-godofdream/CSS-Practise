@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>CSS-照片墙</title>
+		<meta charset="UTF-8"/>
+		<!--声明CSS的代码域-->
+		<style type="text/css">
+			/*设置页面样式*/
+			body{
+				text-align: center;
+				background-color: black ;
+			}
+			/*设置图片样式*/
+			img{
+				width: 20%; /*设置高度*/
+				border:solid 1px darkgreen;/*设置边框颜色*/
+				padding: 10px;/*设置边框距*/
+				background-color: white;/*设置背景颜色*/
+				transform: rotate(-10deg);/*设置旋转角度*/
+				margin-top: 70px;/*设置上边距*/
+				margin-bottom:60px ;/*设置下边距*/
+				margin-left:30px ;/*设置外边距*/
+			}
+			/*使用伪类绘标签添加样式*/
+			img:hover{
+				transform: rotate(0deg) scale(1.5);/*设置旋转角度及放缩*/
+				z-index: 2;/*设置显示优先级别*/
+				transition: 1.5s;/*设置显示动画*/
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/006.png" alt="" />
+		<img src="img/007.png" alt="" />
+		<img src="img/031.png" alt="" />
+		<img src="img/041.png" alt="" /><br />
+		<img src="img/042.png" alt="" />
+		<img src="img/043.jpg" alt="" />
+		<img src="img/044.jpg" alt="" />
+		<img src="img/060.png" alt="" />
+		
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>CSS的定位学习</title>
+		<meta charset="UTF-8"/>
+		<!--CSS的定位学习
+			positon:
+				相对定位：relative
+					作用：相对元素原有位置移动指定的距离
+						可以使用top/left/right/bottom来进行设置
+					注意：其他元素位置是不动的
+				绝对定位：absolute
+					作用：可以使用元素参照界面对父元素来进行移动
+					注意：如果父级元素成为参照元素，必须使用相对定位为属性
+						默认情况下是以界面为基准进行移动的
+				固定定位：fixed
+					作用：
+		-->
+		<style type="text/css">
+			#div1{
+				border: solid 2px orange;
+				height: 220px;
+				width: 800px;
+				margin-bottom:10px ;
+				position:relative;
+				left: 100px;
+				top: 100px;
+				background-color: gray;
+			}
+			#showdiv{
+				border: solid 2px yellow;
+				height: 50px;
+				width: 150px;
+				position: absolute;
+				top: 40px;
+			}
+			#div2{
+				border: dashed 2px coral;
+				height: 220px;
+				width: 800px;
+				margin-bottom: 10px;
+				background-color: red;
+			}
+			#div3{
+				border: solid 2px blue;
+				height: 220px;
+				width: 800px;
+			}
+			#div4{
+				border:dashed 2px purple;
+				height: 200px;
+				width: 100px;
+				position: fixed;
+				margin-right: 10px;
+				right:10px;
+				top:10px;
+				background-color: orchid;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="div1">
+			<div id="showdiv">div1</div>
+		</div>
+		<div id="div2">div2</div>
+		<div id="div3">div3</div>
+		<div id="div4">固定div4</div>
+	</body>
+</html>
